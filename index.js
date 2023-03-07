@@ -4,6 +4,9 @@ function onkoKirjautunut() {
     if (localStorage.getItem("kirjautunut") === "kyllä") {
         console.log("Tervetuloa " + localStorage.getItem("kayttajanimi"))
 
+        document.getElementById("käyttäjäNimiOikealaita").style.display = "";
+        document.getElementById("käyttäjäNimiOikealaita").innerHTML = localStorage.getItem("kayttajanimi")
+
         document.getElementById("kirjauduNappi").style.display = "none";
         document.getElementById("rekisteroiNappi").style.display = "none";
 
@@ -11,6 +14,7 @@ function onkoKirjautunut() {
     }
     else {
         document.getElementById("kirjauduUlosNappi").style.display = "none";
+        document.getElementById("käyttäjäNimiOikealaita").style.display = "none";
     }
 
 }
@@ -43,4 +47,5 @@ function ulos() {
     document.getElementById("rekisteroiNappi").style.display = "";
     console.log("Poista tervetulo nappi")
     document.getElementById("kirjauduUlosNappi").style.display = "none";
-}
+    document.getElementById("käyttäjäNimiOikealaita").style.display = "none";
+}   
