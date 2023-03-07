@@ -321,6 +321,14 @@
      border-color: #e3d105;
      color: #222;
 }
+button {
+     background-color: transparent;
+     background-repeat: no-repeat;
+     border: none;
+     cursor: pointer;
+     overflow: hidden;
+     outline: none;
+ }
  #sidebarCollapse {
      background: transparent;
 }
@@ -756,6 +764,9 @@
  .submit:hover {
     background: #ddd;
      color: #000;
+}
+.contact-us {
+     padding-top: 35px;
 }
  .footer .img-box figure {
     margin: 0px;
