@@ -48,4 +48,5 @@ function ulos() {
     console.log("Poista tervetulo nappi")
     document.getElementById("kirjauduUlosNappi").style.display = "none";
     document.getElementById("käyttäjäNimiOikealaita").style.display = "none";
+    document.getElementById("käyttäjäNimiOikealaita").innerHTML = "";
 }   
