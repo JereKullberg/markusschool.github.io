@@ -33,7 +33,7 @@ function kirjaudu() {
     let kirjautumisNimi = document.getElementById("nimiTekstiboksi").value;
     let kirjautumisSalasana = document.getElementById("salasanaTekstiboksi").value;
 
-    if(kirjautumisNimi == localStorage.getItem("kayttajanimi") && kirjautumisSalasana === localStorage.getItem("salasana")) {
+    if(kirjautumisNimi.toLowerCase() === localStorage.getItem("kayttajanimi").toLowerCase() && kirjautumisSalasana === localStorage.getItem("salasana")) {
         localStorage.setItem("kirjautunut", "kyllä")
         window.location.replace("index.html");
     } else {
