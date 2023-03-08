@@ -28,10 +28,13 @@ function rekisteroi() {
     let nimi = document.getElementById("kayttajanimi").value;
     let salasana = document.getElementById("salasana").value;
 
-    localStorage.setItem("kayttajanimi", nimi)
-    localStorage.setItem("salasana", salasana)
-    localStorage.setItem("kirjautunut", "kyllä")
-
+    if(nimi && salasana) { // Katsoo jos nimi ja salasana kohdat eivät ole tyhjiä.
+        localStorage.setItem("kayttajanimi", nimi)
+        localStorage.setItem("salasana", salasana)
+        localStorage.setItem("kirjautunut", "kyllä")  
+        window.location.replace("index.html");  
+    }
+ 
 }
 
 // Funktio, joka tarkistaa käyttäjänimen ja salasanan localStoragesta ja kirjaa käyttäjän sisään, jos tiedot ovat oikein
