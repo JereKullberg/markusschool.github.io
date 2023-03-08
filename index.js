@@ -1,8 +1,11 @@
+// Tämä tapahtumankäsittelijä rekisteröidään ajettavaksi, kun DOM on valmis
 document.addEventListener("DOMContentLoaded", onkoKirjautunut);
 
+// Funktio, joka tarkistaa, onko käyttäjä kirjautunut ja piilottaa / näyttää sivuston osia sen mukaan
 function onkoKirjautunut() {
+
+    // Jos käyttäjä on kirjautunut sisään, näytä käyttäjänimi ja kirjaudu ulos -nappi
     if (localStorage.getItem("kirjautunut") === "kyllä") {
-        console.log("Tervetuloa " + localStorage.getItem("kayttajanimi"))
 
         document.getElementById("käyttäjäNimiOikealaita").style.display = "";
         document.getElementById("käyttäjäNimiOikealaita").innerHTML = localStorage.getItem("kayttajanimi")
@@ -12,13 +15,15 @@ function onkoKirjautunut() {
 
         document.getElementById("kirjauduUlosNappi").style.display = "";
     }
+
+    // Jos käyttäjä ei ole kirjautunut sisään, piilota käyttäjänimi ja kirjaudu ulos -nappi
     else {
         document.getElementById("kirjauduUlosNappi").style.display = "none";
         document.getElementById("käyttäjäNimiOikealaita").style.display = "none";
     }
-
 }
 
+// Funktio, joka tallentaa käyttäjänimi, salasana ja kirjautumistilan localStorageen rekisteröintilomakkeelta
 function rekisteroi() {
     let nimi = document.getElementById("kayttajanimi").value;
     let salasana = document.getElementById("salasana").value;
@@ -29,6 +34,7 @@ function rekisteroi() {
 
 }
 
+// Funktio, joka tarkistaa käyttäjänimen ja salasanan localStoragesta ja kirjaa käyttäjän sisään, jos tiedot ovat oikein
 function kirjaudu() {
     let kirjautumisNimi = document.getElementById("nimiTekstiboksi").value;
     let kirjautumisSalasana = document.getElementById("salasanaTekstiboksi").value;
@@ -36,17 +42,23 @@ function kirjaudu() {
     if(kirjautumisNimi.toLowerCase() === localStorage.getItem("kayttajanimi").toLowerCase() && kirjautumisSalasana === localStorage.getItem("salasana")) {
         localStorage.setItem("kirjautunut", "kyllä")
         window.location.replace("index.html");
-    } else {
+    }
+    
+    else {
         console.log("Käyttäjänimi tai salasana on väärin.")
     }
 }
 
+// Tehtävä: Käsittelee "kirjaudu ulos" -toimintoa.
 function ulos() {
+    // Asetetaan "kirjautunut" -avaimen arvoksi "ulos" LocalStorage -objektissa.
     localStorage.setItem("kirjautunut", "ulos")
-    document.getElementById("kirjauduNappi").style.display = "";
-    document.getElementById("rekisteroiNappi").style.display = "";
-    console.log("Poista tervetulo nappi")
+
+    // Piilotetaan käyttäjän nimen oikealla puolella oleva elementti ja kirjaudu ulos -nappi.
     document.getElementById("kirjauduUlosNappi").style.display = "none";
     document.getElementById("käyttäjäNimiOikealaita").style.display = "none";
-    document.getElementById("käyttäjäNimiOikealaita").innerHTML = "";
-}   
+
+    // Näytetään sen sijaan kirjaudu- ja rekisteröi-napit.
+    document.getElementById("kirjauduNappi").style.display = "";
+    document.getElementById("rekisteroiNappi").style.display = "";
+}
