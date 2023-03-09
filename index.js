@@ -32,25 +32,24 @@ function rekisteroi() {
         localStorage.setItem("kayttajanimi", nimi)
         localStorage.setItem("salasana", salasana)
         localStorage.setItem("kirjautunut", "kyllä")  
-        window.location.replace("index.html");  
-    }
- 
+        window.location.href = "index.html";  
+    } 
 }
 
 // Funktio, joka tarkistaa käyttäjänimen ja salasanan localStoragesta ja kirjaa käyttäjän sisään, jos tiedot ovat oikein
 function kirjaudu() {
-    let kirjautumisNimi = document.getElementById("nimiTekstiboksi").value;
-    let kirjautumisSalasana = document.getElementById("salasanaTekstiboksi").value;
-
+    let kirjautumisNimi = document.getElementById("kayttajanimi").value;
+    let kirjautumisSalasana = document.getElementById("salasana").value;
+    let virheilmoitus = document.getElementById("virheilmoitus");
+  
     if(kirjautumisNimi.toLowerCase() === localStorage.getItem("kayttajanimi").toLowerCase() && kirjautumisSalasana === localStorage.getItem("salasana")) {
-        localStorage.setItem("kirjautunut", "kyllä")
-        window.location.replace("index.html");
+      localStorage.setItem("kirjautunut", "kyllä")
+      window.location.replace("index.html");
     }
-    
     else {
-        console.log("Käyttäjänimi tai salasana on väärin.")
+      virheilmoitus.textContent = "Käyttäjänimi tai salasana on väärin.";
     }
-}
+  }
 
 // Tehtävä: Käsittelee "kirjaudu ulos" -toimintoa.
 function ulos() {
