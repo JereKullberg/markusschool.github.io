@@ -35,7 +35,7 @@ function rekisteroi() {
         window.location.href = "index.html";  
     } 
 }
-
+//
 // Funktio, joka tarkistaa käyttäjänimen ja salasanan localStoragesta ja kirjaa käyttäjän sisään, jos tiedot ovat oikein
 function kirjaudu() {
     let kirjautumisNimi = document.getElementById("kayttajanimi").value;
