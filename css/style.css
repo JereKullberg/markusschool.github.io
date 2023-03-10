@@ -322,9 +322,9 @@
      border: solid #eaeaea 1px;
 }
  .button_user a:hover, .button_user a:focus, .button_user a.active {
-     background: #e3d105;
+     background: #e30505;
      color: #fff;
-     border-color: #e3d105;
+     border-color: #e30505;
      color: #222;
 }
 button {
@@ -416,12 +416,12 @@ button {
      margin-top: 20px;
 }
  .main_bt_border:hover, .main_bt_border:focus {
-     background: #e3d105;
-     border-color: #e3d105;
+     background: #e00505;
+     border-color: #e00505;
      color: #222;
 }
  .theme_color {
-     color: #f8c90d !important;
+     color: #d11212 !important;
 }
 .resip_section {
     background: #212020;
@@ -455,7 +455,7 @@ button {
     font-size: 33px !important;
 }
  .carousel-control-prev:focus, .carousel-control-prev:hover {
-    background: #e3d105;
+    background: #e00505b2;
      color: #000;
 }
  .carousel-control-prev {
@@ -468,7 +468,7 @@ button {
      top: 35%;
 }
  .carousel-control-next:focus, .carousel-control-next:hover {
-    background: #e3d105;
+    background: #e00505b2;
      color: #000;
 }
  .carousel-control-next {
@@ -500,7 +500,7 @@ button {
      color: #000;
 }
  .owl-next:hover{
-    background: #e3d105;
+    background: #e30505;
      color: #000;
 }
  .owl-dots {
@@ -537,11 +537,11 @@ button {
      line-height: 29px;
 }
  .about .about_box a:hover {
-     color: #e7bb0b;
+     color: #e70b0b;
 }
  .about .about_img {
      height: 100%;
-     background: #d8b00f;
+     background: #d80f0f;
      margin-top: 90px;
 }
  .about .about_img figure {
@@ -653,7 +653,7 @@ button {
 /** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
  .footer {
-     background: #d8b00f;
+     background: #d80f0f;
      padding-top:90px;
      margin-top: 90px;
 }
@@ -793,7 +793,7 @@ button {
      font-size: 17px;
 }
  .copyright a:hover {
-    color: #d8b00f;
+    color: #d80f0f;
 }
  .owl-dot {
      background: #15cfe5 !important;
@@ -877,11 +877,11 @@ button {
 }
  #sidebar ul li a:hover {
      color: #fff;
-     background: #d8b00f;
+     background: #d80f0f;
 }
  #sidebar ul li.active > a, a[aria-expanded="true"] {
      color: #fff;
-     background: #d8b00f;
+     background: #d80f0f;
 }
  a[data-toggle="collapse"] {
      position: relative;
@@ -926,7 +926,7 @@ button {
      font-weight: 500;
 }
  .yellow_bg {
-     background-color: #e3d105;
+     background-color: #e30505;
      padding: 40px 0px;
      margin-top: 90px;
 }

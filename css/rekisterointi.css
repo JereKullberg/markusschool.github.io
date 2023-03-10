@@ -24,7 +24,7 @@ body {
 
 h2 {
   text-align: center;
-  color: #e3d105;
+  color: #e30505;
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 30px;
@@ -44,7 +44,7 @@ input[type='password'] {
 }
 
 button[type='button'] {
-  background-color: #e3d105;
+  background-color: #e30505;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -56,13 +56,13 @@ button[type='button'] {
 }
 
 button[type='button']:hover {
-  background-color: #c9b90b;
+  background-color: #c90b0b;
 }
 
 .back-button {
   background-color: #fff;
-  color: #e3d105;
-  border: 1px solid #e3d105;
+  color: #e30505;
+  border: 1px solid #e30505;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
@@ -72,6 +72,6 @@ button[type='button']:hover {
 }
 
 .back-button:hover {
-  background-color: #c9b90b;
+  background-color: #c90b0b;
   color: #fff;
 }
