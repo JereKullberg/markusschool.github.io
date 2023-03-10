@@ -60,6 +60,11 @@
      text-decoration: none!important;
      opacity: 1 
 }
+
+.rov {
+     max-height: 50px;
+}
+
  button:focus {
      outline: none;
 }
@@ -712,6 +717,8 @@ button {
      padding-bottom: 15px;
      margin-bottom: 15px;
 }
+
+
  ul.lik {
     text-align: center;
      margin-top: 10px;
