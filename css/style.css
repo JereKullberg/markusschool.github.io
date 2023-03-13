@@ -951,3 +951,14 @@ button {
      color: #fff;
      font-weight: 500;
 }
+
+.blog_box {
+  height: 600px;/* Add a fixed height to the blog boxes */
+  width: 300px;
+  
+}
+body {
+     margin: 0;
+     padding: 0;
+   }
+   
