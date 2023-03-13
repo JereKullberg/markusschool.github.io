@@ -1,0 +1,281 @@
+link {
+    display: none;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ylapalkki {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0);
+    z-index: 10;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: none;
+    box-shadow: 3px 3px 4px 3px #00000069;
+}
+
+div {
+    float: left;
+    height: 470px;
+    width: 23%;
+    padding: 0 10px;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+.pizza1,
+.pizza2,
+.pizza3,
+.pizza4,
+.pizza5,
+.pizza6,
+.pizza7,
+.pizza8 {
+    width: 260px;
+    height: 380px;
+    border: 0.3px solid rgb(250, 250, 250);
+    padding: 0;
+    margin: 20px;
+    border-style: solid;
+    border-radius: 7px;
+    image-rendering: auto;
+    box-shadow: 2px 2px 2px #ededed9e;
+    background-color:rgb(255, 255, 255);
+    transition: 0.4ms;
+    position: relative;
+}
+
+
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(255, 255, 255);
+    z-index: 10;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: auto;
+  }
+
+img {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 420;
+    text-align: justify;
+}
+
+p {
+    font-size: 11px;
+
+}
+
+.btn {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    width: 100%;
+    height: 50px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+.container {
+    display: flex;
+    float: left;
+}
+
+.logo {
+    border-radius: 0px;
+}
+
+.ostos {
+    right: 10px;
+    width: 35px;
+    height: 30px;
+}
+
+.plusbtn {
+    color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 55px;
+    right: 0px;
+    border: none;
+    border-radius: 50%;
+    font-family: 'poppins', sans-serif;
+}
+
+.miinusbtn {
+    color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 55px;
+    right: 125px;
+    border: none;
+    border-radius: 50%;
+    font-family: 'poppins', sans-serif;
+}
+
+.maara {
+    color: rgb(0, 0, 0);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 45px;
+    right: 62px;
+    border: none;
+}
+
+.montako {
+    background-color: #4dac5000;
+    height: 25px;
+    width: 50px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    font-size: 30px;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.napit {
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.shadow {
+    position: absolute;
+    background-color: #00000000;
+    height: 51px;
+    width: 220px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.btn1 {
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.ympyra {
+    border-radius: 50%;
+    background-color: #4dac50;
+    height: 50px;
+    width: 50px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    font-size: 40px;
+    border: none;
+    color: #ffffff;
+}
+
+.miinusympyra {
+    border-radius: 50%;
+    background-color: #da0000;
+    height: 50px;
+    width: 50px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    font-size: 40px;
+    border: none;
+    color: #ffffff;
+}
+
+.ympyra:hover {
+    background-color: #459948;
+}
+
+.miinusympyra:hover {
+    background-color: #b60000;
+}
+
+.hinta {
+    color: rgb(0, 0, 0);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    transition: 0.7ms;
+    position: absolute;
+    bottom: 45px;
+    left: 5px;
+    border: none;
+}
+
+.hintanum {
+    background-color: #4dac5000;
+    height: 25px;
+    width: 50px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    font-size: 20px;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
