@@ -240,27 +240,6 @@
  .text_align_center {
      text-align: center;
 }
-/*---------------------------- preloader area ----------------------------*/
- .loader_bg {
-     position: fixed;
-     z-index: 9999999;
-     background: #fff;
-     width: 100%;
-     height: 100%;
-}
- .loader {
-     height: 100%;
-     width: 100%;
-     position: absolute;
-     left: 0;
-     top: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
- .loader img {
-     width: 280px;
-}
 /*--------------------------------------------------------------------- header ---------------------------------------------------------------------*/
  header {
      min-height: 90px;
@@ -615,42 +594,6 @@ button {
      padding-bottom:28px;
 }
 /** end blog **/
-/** Our Client **/
- .Client {
-     padding-top:90px;
-}
- .Client .title h2 {
-     font-size: 45px;
-     font-weight: 500;
-     line-height: 40px;
-     color: #191918;
-     padding: 20px 0px;
-     padding-bottom: 0px;
-}
- .Client .Client_box {
-     background: #212020;
-     border-radius: 20px;
-     text-align: center;
-     padding: 65px 50px;
-}
- .Client .Client_box h3 {
-     color: #fff;
-     font-size: 30px;
-     line-height: 28px;
-     padding: 25px 0px;
-     padding-top: 32px;
-}
- .Client .Client_box p {
-     color: #fff;
-     font-size: 17px;
-     line-height:28px;
-     font-weight: 400;
-}
- .Client .Client_box i {
-     padding-top: 20px;
-     display: inline-block;
-}
-/** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
  .footer {
      background: #d80f0f;
@@ -691,22 +634,7 @@ button {
      width: 100%;
      padding-top: 40px;
 }
- .send {
-     font-family: poppins;
-     float: left;
-     margin: 0 auto;
-     display: block;
-     background: #fff;
-     color: #000;
-     max-width: 165px;
-     padding: 13px 0px;
-     width: 100%;
-     font-size: 18px;
-}
- .send:hover {
-     background: #000;
-     color: #fff;
-}
+
  .footer .img-box {
      padding-right: 25px;
 }
@@ -786,15 +714,7 @@ button {
     background: #fff;
      margin-top: 90px;
 }
- .copyright p {
-    color: #000;
-     text-align: center;
-     padding: 25px 0px;
-     font-size: 17px;
-}
- .copyright a:hover {
-    color: #d80f0f;
-}
+
  .owl-dot {
      background: #15cfe5 !important;
      width: 25px;

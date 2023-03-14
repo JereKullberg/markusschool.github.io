@@ -23,7 +23,7 @@ function onkoKirjautunut() {
     }
 }
 
-// Funktio, joka tallentaa käyttäjänimi, salasana ja kirjautumistilan localStorageen rekisteröintilomakkeelta
+// Funktio, joka tallentaa käyttäjänimen, salasanan ja kirjautumistilan localStorageen rekisteröintilomakkeelta
 function rekisteroi() {
     let nimi = document.getElementById("kayttajanimi").value;
     let salasana = document.getElementById("salasana").value;
@@ -63,4 +63,71 @@ function ulos() {
     // Näytetään sen sijaan kirjaudu- ja rekisteröi-napit.
     document.getElementById("kirjauduNappi").style.display = "";
     document.getElementById("rekisteroiNappi").style.display = "";
+}
+
+function tarkistaSahkoposti() {
+    const sahkopostiInput = document.getElementById('email'); //Haetaan sähköposti
+  
+    // Tarkistetaan, onko kentän vieressä jo virheilmoitus
+    const virheilmoitus = sahkopostiInput.nextSibling;
+  
+    // Haetaan tyytyväisyyden tason kenttä
+    const tyytyvaisuusInput = document.getElementById('rating');
+    
+    // Jos tyytyväisyystaso on kelvollinen, mutta sähköposti ei ole kelvollinen
+    if (tyytyvaisuusInput.checkValidity() && !sahkopostiInput.checkValidity()) {
+  
+      // Jos vieressä ei ole virheilmoitusta tai ilmoituksen luokka ei ole "error"
+      if (!virheilmoitus || virheilmoitus.className !== 'error') {
+  
+        const virheElementti = document.createElement('div');
+        virheElementti.className = 'error';
+  
+        // Lisätään uusi virheilmoitus-elementti sähköpostikentän jälkeen
+        sahkopostiInput.parentNode.insertBefore(virheElementti, sahkopostiInput.nextSibling);
+  
+        virheElementti.textContent = 'Syötä kelvollinen sähköpostiosoite.';
+      } else {
+        virheilmoitus.textContent = 'Syötä kelvollinen sähköpostiosoite.';
+      }
+    // Jos tyytyväisyystaso ei ole kelvollinen
+    } else if (!tyytyvaisuusInput.checkValidity()) {
+  
+      if (!virheilmoitus || virheilmoitus.className !== 'error') {
+  
+        const virheElementti = document.createElement('div');
+        virheElementti.className = 'error';
+  
+        // Lisätään uusi virheilmoitus-elementti sähköpostikentän jälkeen
+        sahkopostiInput.parentNode.insertBefore(virheElementti, sahkopostiInput.nextSibling);
+  
+        virheElementti.textContent = 'Syötä kelvollinen tyytyväisyyden taso (1-5).';
+      } else {
+        virheilmoitus.textContent = 'Syötä kelvollinen tyytyväisyyden taso (1-5).';
+      }
+    } else {
+      // Jos molemmat kentät ovat kelvollisia ja vieressä on virheilmoitus-elementti
+      if (virheilmoitus && virheilmoitus.className === 'error') {
+        virheilmoitus.remove();
+      }
+      window.location.replace('index.html');
+    }
+  }  
+
+function pizzaJuttu() {
+
+    /*
+
+    VALMISTUAJAN KAAVAT
+
+        Pizzojen valmistumisajan kaava:
+
+        peruspizza: norm pohja 10 min, gluteeniton +3 min, lisätäyte + 1 min
+
+        ”fantasia”-pizza: norm pohja 7 min, gluteeniton +3min, täytteet + 1 min
+
+        Toimitus alle 3 km 5 min, 3-10 km 10min, 10-20km 20min, max 20 km
+        
+    */
+
 }
