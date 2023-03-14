@@ -35,6 +35,7 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <script type="text/javascript" language="javascript" src="js/valmiinPizzanTilausSivu.js"></script>
 </head>
 <body>
     <div class="bg">
@@ -53,10 +54,10 @@
             <button type="button" class="btn">Lisää tuote</button>
             <div class="btn1">
               <div class="plusbtn">
-                <button type="button" class="ympyra">+</button>
+                <button type="button" class="ympyra" onclick="LisaaPizza()">+</button>
               </div>
               <div class="maara">
-                <p class="montako">0</p>
+                <p class="montako" type="Number" id="pizza1Kpl"></p>
               </div>
               <div class="miinusbtn">
                 <button type="button" class="miinusympyra">-</button>
