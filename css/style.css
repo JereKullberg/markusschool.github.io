@@ -678,41 +678,11 @@ button {
      display:inline-block;
      padding-right: 15px;
 }
- .newtt p {
-    color: #fff;
-     text-align: center;
-     margin-top: 35px;
-}
- .newtetter {
-    display: inline-block;
-}
- .newtetter .tetter {
-     padding: 9px 20px;
-     border-radius: inherit;
-     border: indianred
-}
- .submit {
-     background: #070100;
-     margin-left: -3px;
-     padding: 9px 50px;
-     color: #fff;
-}
- .submit:hover {
-    background: #ddd;
-     color: #000;
-}
-.contact-us {
-     padding-top: 35px;
-}
  .footer .img-box figure {
     margin: 0px;
 }
  .footer .img-box figure img {
     width: 100%;
-}
- .copyright {
-    background: #fff;
-     margin-top: 90px;
 }
 
  .owl-dot {
