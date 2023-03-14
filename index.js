@@ -110,7 +110,7 @@ function tarkistaSahkoposti() {
       if (virheilmoitus && virheilmoitus.className === 'error') {
         virheilmoitus.remove();
       }
-      window.location.replace('main.html');
+      window.location.replace('index.html');
     }
   }  
 
