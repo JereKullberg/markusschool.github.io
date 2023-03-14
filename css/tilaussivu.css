@@ -24,13 +24,6 @@ html {
     box-shadow: 3px 3px 4px 3px #00000069;
 }
 
-div {
-    float: left;
-    height: 470px;
-    width: 23%;
-    padding: 0 10px;
-}
-
 h1 {
     font-size: 64px;
     text-align: center;
