@@ -23,7 +23,7 @@ function onkoKirjautunut() {
     }
 }
 
-// Funktio, joka tallentaa käyttäjänimi, salasana ja kirjautumistilan localStorageen rekisteröintilomakkeelta
+// Funktio, joka tallentaa käyttäjänimen, salasanan ja kirjautumistilan localStorageen rekisteröintilomakkeelta
 function rekisteroi() {
     let nimi = document.getElementById("kayttajanimi").value;
     let salasana = document.getElementById("salasana").value;
@@ -63,4 +63,21 @@ function ulos() {
     // Näytetään sen sijaan kirjaudu- ja rekisteröi-napit.
     document.getElementById("kirjauduNappi").style.display = "";
     document.getElementById("rekisteroiNappi").style.display = "";
+}
+
+function pizzaJuttu() {
+
+    /*
+
+    VALMISTUAJAN KAAVAT
+
+        Pizzojen valmistumisajan kaava:
+
+        peruspizza: norm pohja 10 min, gluteeniton +3 min, lisätäyte + 1 min
+
+        ”fantasia”-pizza: norm pohja 7 min, gluteeniton +3min, täytteet + 1 min
+
+        Toimitus alle 3 km 5 min, 3-10 km 10min, 10-20km 20min, max 20 km
+    */
+
 }
