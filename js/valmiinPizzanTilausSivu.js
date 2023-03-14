@@ -1,15 +1,21 @@
-document.addEventListener("DOMContentLoaded", Maara);
+document.addEventListener("DOMContentLoaded", Maara(null));
+document.addEventListener("pageshow", Maara(null))
 
-function Maara(){
-    if(localStorage.getItem('pizza') === 0){
-        document.getElementById('pizza1Kpl').innerHTML = '0'
-    }else{
-        document.getElementById('pizza1Kpl').innerHTML = localStorage.getItem('pizza1Kpl');
-    }
+function Maara(pizzaNro){
+        if(localStorage.getItem(pizzaNro) > 0){
+         document.getElementById(pizzaNro).innerHTML = localStorage.getItem(pizzaNro);
+        }else{
+            document.getElementById(pizzaNro).innerHTML = '0';
+        }
 }
 
-function LisaaPizza(){
-
-    localStorage.setItem('pizza1Kpl', localStorage.getItem('pizza1Kpl') + 1);
-    Maara();
+function LisaaPizza(pizzaNro){
+    localStorage.setItem(pizzaNro, Number(localStorage.getItem(pizzaNro)) + 1);
+    Maara(pizzaNro);
+}
+function VahennaPizza(pizzaNro){
+    if(localStorage.getItem(pizzaNro) > 0){
+        localStorage.setItem(pizzaNro, Number(localStorage.getItem(pizzaNro)) - 1);
+    }
+    Maara(pizzaNro);
 }
