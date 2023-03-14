@@ -37,6 +37,7 @@ h1 {
 .pizza6,
 .pizza7,
 .pizza8 {
+    display: inline-block;
     width: 260px;
     height: 380px;
     border: 0.3px solid rgb(250, 250, 250);
@@ -49,7 +50,6 @@ h1 {
     background-color:rgb(255, 255, 255);
     transition: 0.4ms;
     position: relative;
-    display: inline-block;
 }
 
 
@@ -170,7 +170,7 @@ p {
 
 .montako {
     background-color: #4dac5000;
-    height: 50px;
+    height: 45px;
     width: 50px;
     bottom: 0px;
     left: 0px;
@@ -198,7 +198,7 @@ p {
     height: 51px;
     width: 220px;
     bottom: 0px;
-    left: 0px;
+    left: 20px;
 }
 
 .btn1 {
@@ -210,12 +210,13 @@ p {
 }
 
 .ympyra {
+    line-height: 1.35;
     border-radius: 50%;
     background-color: #4dac50;
     height: 50px;
     width: 50px;
     bottom: 0px;
-    left: 0px;
+    left: -15px;
     position: absolute;
     font-size: 30px;
     border: none;
@@ -223,12 +224,13 @@ p {
 }
 
 .miinusympyra {
+    line-height: 1.35;
     border-radius: 50%;
     background-color: #da0000;
     height: 50px;
     width: 50px;
     bottom: 0px;
-    left: 0px;
+    left: 15px;
     position: absolute;
     font-size: 35px;
     border: none;
@@ -260,7 +262,7 @@ p {
 
 .hintanum {
     background-color: #4dac5000;
-    height: 25px;
+    height: 45px;
     width: 50px;
     bottom: 0px;
     left: 0px;
