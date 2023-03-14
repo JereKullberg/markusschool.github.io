@@ -65,6 +65,55 @@ function ulos() {
     document.getElementById("rekisteroiNappi").style.display = "";
 }
 
+function tarkistaSahkoposti() {
+    const sahkopostiInput = document.getElementById('email'); //Haetaan sähköposti
+  
+    // Tarkistetaan, onko kentän vieressä jo virheilmoitus
+    const virheilmoitus = sahkopostiInput.nextSibling;
+  
+    // Haetaan tyytyväisyyden tason kenttä
+    const tyytyvaisuusInput = document.getElementById('rating');
+    
+    // Jos tyytyväisyystaso on kelvollinen, mutta sähköposti ei ole kelvollinen
+    if (tyytyvaisuusInput.checkValidity() && !sahkopostiInput.checkValidity()) {
+  
+      // Jos vieressä ei ole virheilmoitusta tai ilmoituksen luokka ei ole "error"
+      if (!virheilmoitus || virheilmoitus.className !== 'error') {
+  
+        const virheElementti = document.createElement('div');
+        virheElementti.className = 'error';
+  
+        // Lisätään uusi virheilmoitus-elementti sähköpostikentän jälkeen
+        sahkopostiInput.parentNode.insertBefore(virheElementti, sahkopostiInput.nextSibling);
+  
+        virheElementti.textContent = 'Syötä kelvollinen sähköpostiosoite.';
+      } else {
+        virheilmoitus.textContent = 'Syötä kelvollinen sähköpostiosoite.';
+      }
+    // Jos tyytyväisyystaso ei ole kelvollinen
+    } else if (!tyytyvaisuusInput.checkValidity()) {
+  
+      if (!virheilmoitus || virheilmoitus.className !== 'error') {
+  
+        const virheElementti = document.createElement('div');
+        virheElementti.className = 'error';
+  
+        // Lisätään uusi virheilmoitus-elementti sähköpostikentän jälkeen
+        sahkopostiInput.parentNode.insertBefore(virheElementti, sahkopostiInput.nextSibling);
+  
+        virheElementti.textContent = 'Syötä kelvollinen tyytyväisyyden taso (1-5).';
+      } else {
+        virheilmoitus.textContent = 'Syötä kelvollinen tyytyväisyyden taso (1-5).';
+      }
+    } else {
+      // Jos molemmat kentät ovat kelvollisia ja vieressä on virheilmoitus-elementti
+      if (virheilmoitus && virheilmoitus.className === 'error') {
+        virheilmoitus.remove();
+      }
+      window.location.replace('main.html');
+    }
+  }  
+
 function pizzaJuttu() {
 
     /*
