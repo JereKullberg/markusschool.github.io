@@ -24,7 +24,7 @@ const onkoKirjautunut = () => {
 }
 
 // Funktio, joka tallentaa käyttäjänimen, salasanan ja kirjautumistilan localStorageen rekisteröintilomakkeelta
-function rekisteroi() {
+const rekisteroi = () => {
     let nimi = document.getElementById("kayttajanimi").value;
     let salasana = document.getElementById("salasana").value;
 
