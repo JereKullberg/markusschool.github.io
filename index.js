@@ -114,7 +114,7 @@ const tarkistaSahkoposti = () => {
     }
   }  
 
-function pizzaJuttu() {
+const pizzaJuttu = () => {
 
     /*
 
