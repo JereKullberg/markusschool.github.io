@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", onkoKirjautunut);
 
 // Funktio, joka tarkistaa, onko käyttäjä kirjautunut ja piilottaa / näyttää sivuston osia sen mukaan
-function onkoKirjautunut() {
+const onkoKirjautunut = () => {
 
     // Jos käyttäjä on kirjautunut sisään, näytä käyttäjänimi ja kirjaudu ulos -nappi
     if (localStorage.getItem("kirjautunut") === "kyllä") {
