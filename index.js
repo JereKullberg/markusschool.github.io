@@ -65,7 +65,7 @@ const ulos = () => {
     document.getElementById("rekisteroiNappi").style.display = "";
 }
 
-function tarkistaSahkoposti() {
+const tarkistaSahkoposti = () => {
     const sahkopostiInput = document.getElementById('email'); //Haetaan sähköposti
   
     // virheilmoitus muuttuja
