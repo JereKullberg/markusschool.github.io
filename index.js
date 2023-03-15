@@ -37,7 +37,7 @@ const rekisteroi = () => {
 }
 
 // Funktio, joka tarkistaa käyttäjänimen ja salasanan localStoragesta ja kirjaa käyttäjän sisään, jos tiedot ovat oikein
-function kirjaudu() {
+const kirjaudu = () => {
     let kirjautumisNimi = document.getElementById("kayttajanimi").value;
     let kirjautumisSalasana = document.getElementById("salasana").value;
     let virheilmoitus = document.getElementById("virheilmoitus");
