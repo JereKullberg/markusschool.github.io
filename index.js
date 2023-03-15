@@ -52,7 +52,7 @@ const kirjaudu = () => {
   }
 
 // Käsittelee "kirjaudu ulos" -toimintoa.
-function ulos() {
+const ulos = () => {
     // Asetetaan "kirjautunut" -avaimen arvoksi "ulos" LocalStorageen.
     localStorage.setItem("kirjautunut", "ulos")
 
