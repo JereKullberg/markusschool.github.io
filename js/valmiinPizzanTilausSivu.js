@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     Maara(null);
-    document.addEventListener("pageshow", Maara);
 });
 
 //päivitetään lukumäärä
