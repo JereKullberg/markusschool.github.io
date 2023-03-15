@@ -68,7 +68,7 @@ function ulos() {
 function tarkistaSahkoposti() {
     const sahkopostiInput = document.getElementById('email'); //Haetaan sähköposti
   
-    // Tarkistetaan, onko kentän vieressä jo virheilmoitus
+    // virheilmoitus muuttuja
     const virheilmoitus = sahkopostiInput.nextSibling;
   
     // Haetaan tyytyväisyyden tason kenttä
