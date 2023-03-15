@@ -35,7 +35,7 @@ function rekisteroi() {
         window.location.href = "index.html";  
     } 
 }
-//
+
 // Funktio, joka tarkistaa käyttäjänimen ja salasanan localStoragesta ja kirjaa käyttäjän sisään, jos tiedot ovat oikein
 function kirjaudu() {
     let kirjautumisNimi = document.getElementById("kayttajanimi").value;
@@ -51,12 +51,12 @@ function kirjaudu() {
     }
   }
 
-// Tehtävä: Käsittelee "kirjaudu ulos" -toimintoa.
+// Käsittelee "kirjaudu ulos" -toimintoa.
 function ulos() {
-    // Asetetaan "kirjautunut" -avaimen arvoksi "ulos" LocalStorage -objektissa.
+    // Asetetaan "kirjautunut" -avaimen arvoksi "ulos" LocalStorageen.
     localStorage.setItem("kirjautunut", "ulos")
 
-    // Piilotetaan käyttäjän nimen oikealla puolella oleva elementti ja kirjaudu ulos -nappi.
+    // Piilotetaan käyttäjän nimi ja kirjaudu ulos -nappi.
     document.getElementById("kirjauduUlosNappi").style.display = "none";
     document.getElementById("käyttäjäNimiOikealaita").style.display = "none";
 
@@ -68,7 +68,7 @@ function ulos() {
 function tarkistaSahkoposti() {
     const sahkopostiInput = document.getElementById('email'); //Haetaan sähköposti
   
-    // Tarkistetaan, onko kentän vieressä jo virheilmoitus
+    // virheilmoitus muuttuja
     const virheilmoitus = sahkopostiInput.nextSibling;
   
     // Haetaan tyytyväisyyden tason kenttä
