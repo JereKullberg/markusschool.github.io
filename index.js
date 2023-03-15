@@ -51,7 +51,7 @@ function kirjaudu() {
     }
   }
 
-// Tehtävä: Käsittelee "kirjaudu ulos" -toimintoa.
+// Käsittelee "kirjaudu ulos" -toimintoa.
 function ulos() {
     // Asetetaan "kirjautunut" -avaimen arvoksi "ulos" LocalStorage -objektissa.
     localStorage.setItem("kirjautunut", "ulos")
