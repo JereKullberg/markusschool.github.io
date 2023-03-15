@@ -53,7 +53,7 @@ function kirjaudu() {
 
 // Käsittelee "kirjaudu ulos" -toimintoa.
 function ulos() {
-    // Asetetaan "kirjautunut" -avaimen arvoksi "ulos" LocalStorage -objektissa.
+    // Asetetaan "kirjautunut" -avaimen arvoksi "ulos" LocalStorageen.
     localStorage.setItem("kirjautunut", "ulos")
 
     // Piilotetaan käyttäjän nimen oikealla puolella oleva elementti ja kirjaudu ulos -nappi.
