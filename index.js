@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", onkoKirjautunut);
 
 // Funktio, joka tarkistaa, onko käyttäjä kirjautunut ja piilottaa / näyttää sivuston osia sen mukaan
-const onkoKirjautunut = () => {
+function onkoKirjautunut() {
 
     // Jos käyttäjä on kirjautunut sisään, näytä käyttäjänimi ja kirjaudu ulos -nappi
     if (localStorage.getItem("kirjautunut") === "kyllä") {
@@ -24,7 +24,7 @@ const onkoKirjautunut = () => {
 }
 
 // Funktio, joka tallentaa käyttäjänimen, salasanan ja kirjautumistilan localStorageen rekisteröintilomakkeelta
-const rekisteroi = () => {
+function rekisteroi() {
     let nimi = document.getElementById("kayttajanimi").value;
     let salasana = document.getElementById("salasana").value;
 
@@ -37,7 +37,7 @@ const rekisteroi = () => {
 }
 
 // Funktio, joka tarkistaa käyttäjänimen ja salasanan localStoragesta ja kirjaa käyttäjän sisään, jos tiedot ovat oikein
-const kirjaudu = () => {
+function kirjaudu() {
     let kirjautumisNimi = document.getElementById("kayttajanimi").value;
     let kirjautumisSalasana = document.getElementById("salasana").value;
     let virheilmoitus = document.getElementById("virheilmoitus");
@@ -52,7 +52,7 @@ const kirjaudu = () => {
   }
 
 // Käsittelee "kirjaudu ulos" -toimintoa.
-const ulos = () => {
+function ulos() {
     // Asetetaan "kirjautunut" -avaimen arvoksi "ulos" LocalStorageen.
     localStorage.setItem("kirjautunut", "ulos")
 
@@ -65,7 +65,7 @@ const ulos = () => {
     document.getElementById("rekisteroiNappi").style.display = "";
 }
 
-const tarkistaSahkoposti = () => {
+function tarkistaSahkoposti() {
     const sahkopostiInput = document.getElementById('email'); //Haetaan sähköposti
   
     // virheilmoitus muuttuja
@@ -114,7 +114,7 @@ const tarkistaSahkoposti = () => {
     }
   }  
 
-const pizzaJuttu = () => {
+function pizzaJuttu() {
 
     /*
 
