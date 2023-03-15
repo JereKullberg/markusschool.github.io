@@ -185,6 +185,10 @@ img {
     border-top-left-radius: 4px;
 }
 
+.bg img{
+    height: 150px;
+}
+
 h2 {
     font-size: 20px;
     font-weight: 420;
